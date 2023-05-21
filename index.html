@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pricing Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <img src="./interactive-pricing-component-main/images/pattern-circles.svg" class="circles">
+        <div class="hope">
+            <h1 class="main-header">Simple, traffic-based pricing</h1>
+            <p class="main-p">Sign-up for our 30-day trial.<br> No credit card required. </p>
+        </div>
+        <div class="container">
+            <div class="overview">
+                <p class="pageview">100K PAGEVIEWS</p>
+                <div class="row">
+                <p class="billing">$16.00</p>
+                <p class="month">/ month</p>
+                </div>
+            </div>
+            <div id="sliderContainer">
+                <input id="range" aria-label="input" type="range" min="0" max="4" value="2" style="background: linear-gradient(to right,#ECF0FB 0%, #ECF0FB 100%);" name="value">
+                <span class="progress"></span>
+            </div>
+            <div class="bill">
+                <p class="monthly">Monthly Billing</p>
+                <label id="switch">
+                    <input type="checkbox" class="check">
+                    <span class="slider"></span>
+                </label>
+                <p class="monthly yearly">Yearly Billing</p>
+                <div class="discount">-25%</div>
+            </div>
+            <div class="hr"></div>
+            <div class="footer">
+                <div class="marks">
+                    <div class="flex">
+                        <img src="./interactive-pricing-component-main/images/icon-check.svg" class="mark">
+                        <p class="yes">Unlimited websites</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./interactive-pricing-component-main/images/icon-check.svg" class="mark">
+                        <p class="yes">100% data ownership </p>
+                    </div>
+                    <div class="flex">
+                        <img src="./interactive-pricing-component-main/images/icon-check.svg" class="mark">
+                        <p class="yes">Email reports</p>
+                    </div>
+                </div>
+                <div class="btn">Start my trial</div>
+            </div>
+        </div>
+    </div>
+    <script src="./drag.js"></script>
+</body>
+</html>
